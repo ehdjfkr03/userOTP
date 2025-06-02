@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    background-color: #111;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  input::placeholder {
+    color: #bbb;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    padding: 14px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .cancel {
+    background-color: #333;
+    border-color: #bbb;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input, select, .btn {
+      font-size: 0.95rem;
+      padding: 12px;
+    }
+  }

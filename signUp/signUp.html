@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>세입자 회원가입</title>
+  <link rel="stylesheet" href="./signUp.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>세입자 회원가입</h1>
+    <input type="text" id="tenantId" placeholder="아이디" />
+    <input type="password" id="tenantPassword" placeholder="비밀번호" />
+    <button class="btn" id="openAuthPopup">인증하기</button>
+    <button class="btn" id="registerBtn" disabled>회원가입 완료</button>
+  </div>
+
+  <!-- 인증 팝업 -->
+  <div class="popup" id="authPopup">
+    <div class="popup-content">
+      <h2>거주 인증</h2>
+      <select id="type">
+        <option value="">거주 유형 선택</option>
+        <option value="원룸">원룸</option>
+        <option value="빌라">빌라</option>
+        <option value="아파트">아파트</option>
+      </select>
+      <input type="text" id="id" placeholder="집주인 아이디" />
+      <input type="text" id="dong" placeholder="동 (예: 101동)" />
+      <input type="text" id="ho" placeholder="호수 (예: 203호)" />
+      <input type="text" id="code" placeholder="인증 코드 (6자리)" />
+      <button class="btn" id="authConfirm">인증하기</button>
+      <button class="btn cancel" id="closePopup">취소</button>
+    </div>
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="./signUp.js"></script>
+</body>
+</html>

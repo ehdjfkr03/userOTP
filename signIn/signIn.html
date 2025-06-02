@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>로그인</title>
+  <link rel="stylesheet" href="signInStyle.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>로그인</h1>
+    <input type="text" id="tenantId" placeholder="아이디" />
+    <input type="text" id="tenantPassword" placeholder="비밀번호" />
+    <button class="btn" id="authBtn">로그인</button>
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="./signIn.js"></script>
+</body>
+</html>
