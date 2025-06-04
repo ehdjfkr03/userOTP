@@ -39,8 +39,10 @@ window.addEventListener('DOMContentLoaded', () => {
         sessionStorage.setItem('residence', matchedTenant.residence);
         sessionStorage.setItem('mainCode', matchedTenant.mainCode);
 
-        window.location.href = '../passwordList/lsit.html';
+        //window.location.href = '../passwordList/lsit.html';
         // 비밀번호 리스트 화면으로 이동 
+
+        window.location.href = '../linkList/guestLink.html';
       } else {
         alert('아이디 또는 비밀번호가 올바르지 않습니다.');
       }
