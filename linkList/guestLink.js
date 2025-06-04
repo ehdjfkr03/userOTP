@@ -22,7 +22,7 @@ async function generateGuestLink() {
 
   await set(ref(db, `guestLinks/${token}`), data);
 
-  const link = `${window.location.origin}/guestPage/guest.html?token=${token}`;
+  const link = `${window.location.origin}/userOTP/guestPage/guest.html?token=${token}`;
   navigator.clipboard.writeText(link);
   alert(`링크가 복사되었습니다:\n${link}`);
 
@@ -49,7 +49,7 @@ async function loadGuestLinks() {
 
   for (const [token, { residence, expiresAt }] of entries) {
     const li = document.createElement('li');
-    const linkUrl = `${window.location.origin}/guestPage/guest.html?token=${token}`;
+    const linkUrl = `${window.location.origin}/userOTP/guestPage/guest.html?token=${token}`;
 
     const expireFormatted = new Date(expiresAt).toLocaleString('ko-KR', {
       year: 'numeric', month: '2-digit', day: '2-digit',
