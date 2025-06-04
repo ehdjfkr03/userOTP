@@ -27,7 +27,7 @@ async function loadGuestPage() {
 
   document.getElementById('open-door-btn').addEventListener('click', async () => {
     try {
-      const res = await fetch('https://your-arduino-endpoint.com/open', {
+      const res = await fetch('https://your-arduino-endpoint.com/open', { // 아두이노 주소 입력력
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token })

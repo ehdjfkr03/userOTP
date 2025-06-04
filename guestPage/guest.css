@@ -1,48 +1,57 @@
+/* 전체 화면 중앙 정렬 및 어두운 배경 */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
-.container {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  text-align: center;
+/* 중앙 래퍼 */
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 손님 메시지 박스 */
+.guest-box {
   width: 90%;
   max-width: 400px;
+  background-color: #1f1f1f;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
-h2 {
-  margin-bottom: 24px;
-  color: #2c3e50;
+/* 문구 */
+.guest-box h2 {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  color: #ffffff;
 }
 
-button {
-  background-color: #27ae60;
-  color: white;
-  border: none;
-  padding: 12px 20px;
+/* 문 열기 버튼 */
+#open-door-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #1976d2;
+  color: #ffffff;
   font-size: 16px;
-  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #1e8449;
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 20px;
-  }
-
-  button {
-    width: 100%;
-  }
+#open-door-btn:hover {
+  background-color: #0d47a1;
 }
